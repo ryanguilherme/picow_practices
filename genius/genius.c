@@ -2,6 +2,9 @@
 #include <stdlib.h>
 #include <time.h>
 #include "pico/stdlib.h"
+#include "hardware/address_mapped.h"
+#include "hardware/regs/intctrl.h"
+#include "hardware/regs/m0plus.h"
 
 /* SEQUENCE SIZE */
 #define SIZE 10
