@@ -13,6 +13,7 @@ endif()
 
 set(PICO_PRACTICES_PATH ${PROJECT_SOURCE_DIR})
 
+
 # Initialize the SDK
 pico_sdk_init()
 

@@ -35,11 +35,11 @@ int main() {
         if (flag) {
             gpio_set_dir(LED1, 1);
             gpio_set_dir(LED2, 1);
-            delay(1500000000000000000);
+            sleep_ms(500);
         }else {
             gpio_set_dir(LED1, 0);
             gpio_set_dir(LED2, 0);
-            delay(1500000000000000000);
+            sleep_ms(500);
         }
     }
 }
