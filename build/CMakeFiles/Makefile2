@@ -72,6 +72,7 @@ all: alarm/all
 all: genius/all
 all: timer_tutorial/all
 all: reflex_game/all
+all: reflex_game_adaptive/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -84,6 +85,7 @@ preinstall: alarm/preinstall
 preinstall: genius/preinstall
 preinstall: timer_tutorial/preinstall
 preinstall: reflex_game/preinstall
+preinstall: reflex_game_adaptive/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
@@ -96,6 +98,7 @@ clean: alarm/clean
 clean: genius/clean
 clean: timer_tutorial/clean
 clean: reflex_game/clean
+clean: reflex_game_adaptive/clean
 .PHONY : clean
 
 #=============================================================================
@@ -1627,6 +1630,21 @@ reflex_game/clean: reflex_game/CMakeFiles/reflex_game.dir/clean
 .PHONY : reflex_game/clean
 
 #=============================================================================
+# Directory level rules for directory reflex_game_adaptive
+
+# Recursive "all" directory target.
+reflex_game_adaptive/all: reflex_game_adaptive/CMakeFiles/reflex_game_adaptive.dir/all
+.PHONY : reflex_game_adaptive/all
+
+# Recursive "preinstall" directory target.
+reflex_game_adaptive/preinstall:
+.PHONY : reflex_game_adaptive/preinstall
+
+# Recursive "clean" directory target.
+reflex_game_adaptive/clean: reflex_game_adaptive/CMakeFiles/reflex_game_adaptive.dir/clean
+.PHONY : reflex_game_adaptive/clean
+
+#=============================================================================
 # Directory level rules for directory timer_tutorial
 
 # Recursive "all" directory target.
@@ -1648,7 +1666,7 @@ timer_tutorial/clean: timer_tutorial/CMakeFiles/timer_tutorial.dir/clean
 pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/all:
 	$(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/build.make pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/depend
 	$(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/build.make pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ryan/pico/picow_practices/build/CMakeFiles --progress-num=28 "Built target bs2_default"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ryan/pico/picow_practices/build/CMakeFiles --progress-num=25 "Built target bs2_default"
 .PHONY : pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1726,7 +1744,7 @@ pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_as
 pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/PioasmBuild.dir/all:
 	$(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/PioasmBuild.dir/build.make pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/PioasmBuild.dir/depend
 	$(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/PioasmBuild.dir/build.make pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/PioasmBuild.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ryan/pico/picow_practices/build/CMakeFiles --progress-num=3,4 "Built target PioasmBuild"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ryan/pico/picow_practices/build/CMakeFiles --progress-num=2,3 "Built target PioasmBuild"
 .PHONY : pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/PioasmBuild.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1779,12 +1797,12 @@ blink/CMakeFiles/blink.dir/all: pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/b
 blink/CMakeFiles/blink.dir/all: blink/CMakeFiles/ELF2UF2Build.dir/all
 	$(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/depend
 	$(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ryan/pico/picow_practices/build/CMakeFiles --progress-num=16,17,18,19,20,21,22,23,24,25,26,27 "Built target blink"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ryan/pico/picow_practices/build/CMakeFiles --progress-num=15,16,17,18,19,20,21,22,23,24 "Built target blink"
 .PHONY : blink/CMakeFiles/blink.dir/all
 
 # Build rule for subdir invocation for target.
 blink/CMakeFiles/blink.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/pico/picow_practices/build/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/pico/picow_practices/build/CMakeFiles 12
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 blink/CMakeFiles/blink.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/pico/picow_practices/build/CMakeFiles 0
 .PHONY : blink/CMakeFiles/blink.dir/rule
@@ -1805,12 +1823,12 @@ blink/CMakeFiles/blink.dir/clean:
 blink/CMakeFiles/ELF2UF2Build.dir/all:
 	$(MAKE) $(MAKESILENT) -f blink/CMakeFiles/ELF2UF2Build.dir/build.make blink/CMakeFiles/ELF2UF2Build.dir/depend
 	$(MAKE) $(MAKESILENT) -f blink/CMakeFiles/ELF2UF2Build.dir/build.make blink/CMakeFiles/ELF2UF2Build.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ryan/pico/picow_practices/build/CMakeFiles --progress-num=1,2 "Built target ELF2UF2Build"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ryan/pico/picow_practices/build/CMakeFiles --progress-num=1 "Built target ELF2UF2Build"
 .PHONY : blink/CMakeFiles/ELF2UF2Build.dir/all
 
 # Build rule for subdir invocation for target.
 blink/CMakeFiles/ELF2UF2Build.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/pico/picow_practices/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/pico/picow_practices/build/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 blink/CMakeFiles/ELF2UF2Build.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/pico/picow_practices/build/CMakeFiles 0
 .PHONY : blink/CMakeFiles/ELF2UF2Build.dir/rule
@@ -1832,12 +1850,12 @@ button/CMakeFiles/button.dir/all: pico-sdk/src/rp2_common/boot_stage2/CMakeFiles
 button/CMakeFiles/button.dir/all: blink/CMakeFiles/ELF2UF2Build.dir/all
 	$(MAKE) $(MAKESILENT) -f button/CMakeFiles/button.dir/build.make button/CMakeFiles/button.dir/depend
 	$(MAKE) $(MAKESILENT) -f button/CMakeFiles/button.dir/build.make button/CMakeFiles/button.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ryan/pico/picow_practices/build/CMakeFiles --progress-num=29,30,31,32,33,34,35,36,37,38,39,40 "Built target button"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ryan/pico/picow_practices/build/CMakeFiles --progress-num=26,27,28,29,30,31,32,33,34,35,36 "Built target button"
 .PHONY : button/CMakeFiles/button.dir/all
 
 # Build rule for subdir invocation for target.
 button/CMakeFiles/button.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/pico/picow_practices/build/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/pico/picow_practices/build/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 button/CMakeFiles/button.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/pico/picow_practices/build/CMakeFiles 0
 .PHONY : button/CMakeFiles/button.dir/rule
@@ -1859,12 +1877,12 @@ lcd_i2c/CMakeFiles/lcd_i2c.dir/all: pico-sdk/src/rp2_common/boot_stage2/CMakeFil
 lcd_i2c/CMakeFiles/lcd_i2c.dir/all: blink/CMakeFiles/ELF2UF2Build.dir/all
 	$(MAKE) $(MAKESILENT) -f lcd_i2c/CMakeFiles/lcd_i2c.dir/build.make lcd_i2c/CMakeFiles/lcd_i2c.dir/depend
 	$(MAKE) $(MAKESILENT) -f lcd_i2c/CMakeFiles/lcd_i2c.dir/build.make lcd_i2c/CMakeFiles/lcd_i2c.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ryan/pico/picow_practices/build/CMakeFiles --progress-num=65,66,67,68,69,70,71,72,73,74,75,76 "Built target lcd_i2c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ryan/pico/picow_practices/build/CMakeFiles --progress-num=58,59,60,61,62,63,64,65,66,67,68 "Built target lcd_i2c"
 .PHONY : lcd_i2c/CMakeFiles/lcd_i2c.dir/all
 
 # Build rule for subdir invocation for target.
 lcd_i2c/CMakeFiles/lcd_i2c.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/pico/picow_practices/build/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/pico/picow_practices/build/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lcd_i2c/CMakeFiles/lcd_i2c.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/pico/picow_practices/build/CMakeFiles 0
 .PHONY : lcd_i2c/CMakeFiles/lcd_i2c.dir/rule
@@ -1886,12 +1904,12 @@ hc_sr04/CMakeFiles/hc_sr04.dir/all: pico-sdk/src/rp2_common/boot_stage2/CMakeFil
 hc_sr04/CMakeFiles/hc_sr04.dir/all: blink/CMakeFiles/ELF2UF2Build.dir/all
 	$(MAKE) $(MAKESILENT) -f hc_sr04/CMakeFiles/hc_sr04.dir/build.make hc_sr04/CMakeFiles/hc_sr04.dir/depend
 	$(MAKE) $(MAKESILENT) -f hc_sr04/CMakeFiles/hc_sr04.dir/build.make hc_sr04/CMakeFiles/hc_sr04.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ryan/pico/picow_practices/build/CMakeFiles --progress-num=53,54,55,56,57,58,59,60,61,62,63,64 "Built target hc_sr04"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ryan/pico/picow_practices/build/CMakeFiles --progress-num=48,49,50,51,52,53,54,55,56,57 "Built target hc_sr04"
 .PHONY : hc_sr04/CMakeFiles/hc_sr04.dir/all
 
 # Build rule for subdir invocation for target.
 hc_sr04/CMakeFiles/hc_sr04.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/pico/picow_practices/build/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/pico/picow_practices/build/CMakeFiles 12
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hc_sr04/CMakeFiles/hc_sr04.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/pico/picow_practices/build/CMakeFiles 0
 .PHONY : hc_sr04/CMakeFiles/hc_sr04.dir/rule
@@ -1913,12 +1931,12 @@ alarm/CMakeFiles/alarm.dir/all: pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/b
 alarm/CMakeFiles/alarm.dir/all: blink/CMakeFiles/ELF2UF2Build.dir/all
 	$(MAKE) $(MAKESILENT) -f alarm/CMakeFiles/alarm.dir/build.make alarm/CMakeFiles/alarm.dir/depend
 	$(MAKE) $(MAKESILENT) -f alarm/CMakeFiles/alarm.dir/build.make alarm/CMakeFiles/alarm.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ryan/pico/picow_practices/build/CMakeFiles --progress-num=5,6,7,8,9,10,11,12,13,14,15 "Built target alarm"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ryan/pico/picow_practices/build/CMakeFiles --progress-num=4,5,6,7,8,9,10,11,12,13,14 "Built target alarm"
 .PHONY : alarm/CMakeFiles/alarm.dir/all
 
 # Build rule for subdir invocation for target.
 alarm/CMakeFiles/alarm.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/pico/picow_practices/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/pico/picow_practices/build/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 alarm/CMakeFiles/alarm.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/pico/picow_practices/build/CMakeFiles 0
 .PHONY : alarm/CMakeFiles/alarm.dir/rule
@@ -1940,12 +1958,12 @@ genius/CMakeFiles/genius.dir/all: pico-sdk/src/rp2_common/boot_stage2/CMakeFiles
 genius/CMakeFiles/genius.dir/all: blink/CMakeFiles/ELF2UF2Build.dir/all
 	$(MAKE) $(MAKESILENT) -f genius/CMakeFiles/genius.dir/build.make genius/CMakeFiles/genius.dir/depend
 	$(MAKE) $(MAKESILENT) -f genius/CMakeFiles/genius.dir/build.make genius/CMakeFiles/genius.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ryan/pico/picow_practices/build/CMakeFiles --progress-num=41,42,43,44,45,46,47,48,49,50,51,52 "Built target genius"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ryan/pico/picow_practices/build/CMakeFiles --progress-num=37,38,39,40,41,42,43,44,45,46,47 "Built target genius"
 .PHONY : genius/CMakeFiles/genius.dir/all
 
 # Build rule for subdir invocation for target.
 genius/CMakeFiles/genius.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/pico/picow_practices/build/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/pico/picow_practices/build/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 genius/CMakeFiles/genius.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/pico/picow_practices/build/CMakeFiles 0
 .PHONY : genius/CMakeFiles/genius.dir/rule
@@ -1967,12 +1985,12 @@ timer_tutorial/CMakeFiles/timer_tutorial.dir/all: pico-sdk/src/rp2_common/boot_s
 timer_tutorial/CMakeFiles/timer_tutorial.dir/all: blink/CMakeFiles/ELF2UF2Build.dir/all
 	$(MAKE) $(MAKESILENT) -f timer_tutorial/CMakeFiles/timer_tutorial.dir/build.make timer_tutorial/CMakeFiles/timer_tutorial.dir/depend
 	$(MAKE) $(MAKESILENT) -f timer_tutorial/CMakeFiles/timer_tutorial.dir/build.make timer_tutorial/CMakeFiles/timer_tutorial.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ryan/pico/picow_practices/build/CMakeFiles --progress-num=89,90,91,92,93,94,95,96,97,98,99,100 "Built target timer_tutorial"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ryan/pico/picow_practices/build/CMakeFiles --progress-num=90,91,92,93,94,95,96,97,98,99,100 "Built target timer_tutorial"
 .PHONY : timer_tutorial/CMakeFiles/timer_tutorial.dir/all
 
 # Build rule for subdir invocation for target.
 timer_tutorial/CMakeFiles/timer_tutorial.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/pico/picow_practices/build/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/pico/picow_practices/build/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 timer_tutorial/CMakeFiles/timer_tutorial.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/pico/picow_practices/build/CMakeFiles 0
 .PHONY : timer_tutorial/CMakeFiles/timer_tutorial.dir/rule
@@ -1994,12 +2012,12 @@ reflex_game/CMakeFiles/reflex_game.dir/all: pico-sdk/src/rp2_common/boot_stage2/
 reflex_game/CMakeFiles/reflex_game.dir/all: blink/CMakeFiles/ELF2UF2Build.dir/all
 	$(MAKE) $(MAKESILENT) -f reflex_game/CMakeFiles/reflex_game.dir/build.make reflex_game/CMakeFiles/reflex_game.dir/depend
 	$(MAKE) $(MAKESILENT) -f reflex_game/CMakeFiles/reflex_game.dir/build.make reflex_game/CMakeFiles/reflex_game.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ryan/pico/picow_practices/build/CMakeFiles --progress-num=77,78,79,80,81,82,83,84,85,86,87,88 "Built target reflex_game"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ryan/pico/picow_practices/build/CMakeFiles --progress-num=69,70,71,72,73,74,75,76,77,78 "Built target reflex_game"
 .PHONY : reflex_game/CMakeFiles/reflex_game.dir/all
 
 # Build rule for subdir invocation for target.
 reflex_game/CMakeFiles/reflex_game.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/pico/picow_practices/build/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/pico/picow_practices/build/CMakeFiles 12
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 reflex_game/CMakeFiles/reflex_game.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/pico/picow_practices/build/CMakeFiles 0
 .PHONY : reflex_game/CMakeFiles/reflex_game.dir/rule
@@ -2012,6 +2030,33 @@ reflex_game: reflex_game/CMakeFiles/reflex_game.dir/rule
 reflex_game/CMakeFiles/reflex_game.dir/clean:
 	$(MAKE) $(MAKESILENT) -f reflex_game/CMakeFiles/reflex_game.dir/build.make reflex_game/CMakeFiles/reflex_game.dir/clean
 .PHONY : reflex_game/CMakeFiles/reflex_game.dir/clean
+
+#=============================================================================
+# Target rules for target reflex_game_adaptive/CMakeFiles/reflex_game_adaptive.dir
+
+# All Build rule for target.
+reflex_game_adaptive/CMakeFiles/reflex_game_adaptive.dir/all: pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/all
+reflex_game_adaptive/CMakeFiles/reflex_game_adaptive.dir/all: blink/CMakeFiles/ELF2UF2Build.dir/all
+	$(MAKE) $(MAKESILENT) -f reflex_game_adaptive/CMakeFiles/reflex_game_adaptive.dir/build.make reflex_game_adaptive/CMakeFiles/reflex_game_adaptive.dir/depend
+	$(MAKE) $(MAKESILENT) -f reflex_game_adaptive/CMakeFiles/reflex_game_adaptive.dir/build.make reflex_game_adaptive/CMakeFiles/reflex_game_adaptive.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ryan/pico/picow_practices/build/CMakeFiles --progress-num=79,80,81,82,83,84,85,86,87,88,89 "Built target reflex_game_adaptive"
+.PHONY : reflex_game_adaptive/CMakeFiles/reflex_game_adaptive.dir/all
+
+# Build rule for subdir invocation for target.
+reflex_game_adaptive/CMakeFiles/reflex_game_adaptive.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/pico/picow_practices/build/CMakeFiles 13
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 reflex_game_adaptive/CMakeFiles/reflex_game_adaptive.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/pico/picow_practices/build/CMakeFiles 0
+.PHONY : reflex_game_adaptive/CMakeFiles/reflex_game_adaptive.dir/rule
+
+# Convenience name for target.
+reflex_game_adaptive: reflex_game_adaptive/CMakeFiles/reflex_game_adaptive.dir/rule
+.PHONY : reflex_game_adaptive
+
+# clean rule for target.
+reflex_game_adaptive/CMakeFiles/reflex_game_adaptive.dir/clean:
+	$(MAKE) $(MAKESILENT) -f reflex_game_adaptive/CMakeFiles/reflex_game_adaptive.dir/build.make reflex_game_adaptive/CMakeFiles/reflex_game_adaptive.dir/clean
+.PHONY : reflex_game_adaptive/CMakeFiles/reflex_game_adaptive.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

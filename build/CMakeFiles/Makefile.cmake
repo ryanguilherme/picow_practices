@@ -126,6 +126,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../lcd_i2c/CMakeLists.txt"
   "../pico_sdk_import.cmake"
   "../reflex_game/CMakeLists.txt"
+  "../reflex_game_adaptive/CMakeLists.txt"
   "../timer_tutorial/CMakeLists.txt"
   "/usr/share/cmake-3.22/Modules/CMakeASMInformation.cmake"
   "/usr/share/cmake-3.22/Modules/CMakeCInformation.cmake"
@@ -251,6 +252,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "genius/CMakeFiles/CMakeDirectoryInformation.cmake"
   "timer_tutorial/CMakeFiles/CMakeDirectoryInformation.cmake"
   "reflex_game/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "reflex_game_adaptive/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -269,4 +271,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "genius/CMakeFiles/genius.dir/DependInfo.cmake"
   "timer_tutorial/CMakeFiles/timer_tutorial.dir/DependInfo.cmake"
   "reflex_game/CMakeFiles/reflex_game.dir/DependInfo.cmake"
+  "reflex_game_adaptive/CMakeFiles/reflex_game_adaptive.dir/DependInfo.cmake"
   )

@@ -48,6 +48,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/ryan/pico/picow_practices/build/genius/cmake_install.cmake")
   include("/home/ryan/pico/picow_practices/build/timer_tutorial/cmake_install.cmake")
   include("/home/ryan/pico/picow_practices/build/reflex_game/cmake_install.cmake")
+  include("/home/ryan/pico/picow_practices/build/reflex_game_adaptive/cmake_install.cmake")
 
 endif()
 

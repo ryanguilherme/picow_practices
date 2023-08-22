@@ -298,6 +298,19 @@ reflex_game/fast:
 	$(MAKE) $(MAKESILENT) -f reflex_game/CMakeFiles/reflex_game.dir/build.make reflex_game/CMakeFiles/reflex_game.dir/build
 .PHONY : reflex_game/fast
 
+#=============================================================================
+# Target rules for targets named reflex_game_adaptive
+
+# Build rule for target.
+reflex_game_adaptive: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 reflex_game_adaptive
+.PHONY : reflex_game_adaptive
+
+# fast build rule for target.
+reflex_game_adaptive/fast:
+	$(MAKE) $(MAKESILENT) -f reflex_game_adaptive/CMakeFiles/reflex_game_adaptive.dir/build.make reflex_game_adaptive/CMakeFiles/reflex_game_adaptive.dir/build
+.PHONY : reflex_game_adaptive/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -319,6 +332,7 @@ help:
 	@echo "... hc_sr04"
 	@echo "... lcd_i2c"
 	@echo "... reflex_game"
+	@echo "... reflex_game_adaptive"
 	@echo "... timer_tutorial"
 .PHONY : help
 
