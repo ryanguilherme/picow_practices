@@ -272,6 +272,32 @@ genius/fast:
 	$(MAKE) $(MAKESILENT) -f genius/CMakeFiles/genius.dir/build.make genius/CMakeFiles/genius.dir/build
 .PHONY : genius/fast
 
+#=============================================================================
+# Target rules for targets named timer_tutorial
+
+# Build rule for target.
+timer_tutorial: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 timer_tutorial
+.PHONY : timer_tutorial
+
+# fast build rule for target.
+timer_tutorial/fast:
+	$(MAKE) $(MAKESILENT) -f timer_tutorial/CMakeFiles/timer_tutorial.dir/build.make timer_tutorial/CMakeFiles/timer_tutorial.dir/build
+.PHONY : timer_tutorial/fast
+
+#=============================================================================
+# Target rules for targets named reflex_game
+
+# Build rule for target.
+reflex_game: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 reflex_game
+.PHONY : reflex_game
+
+# fast build rule for target.
+reflex_game/fast:
+	$(MAKE) $(MAKESILENT) -f reflex_game/CMakeFiles/reflex_game.dir/build.make reflex_game/CMakeFiles/reflex_game.dir/build
+.PHONY : reflex_game/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -292,6 +318,8 @@ help:
 	@echo "... genius"
 	@echo "... hc_sr04"
 	@echo "... lcd_i2c"
+	@echo "... reflex_game"
+	@echo "... timer_tutorial"
 .PHONY : help
 
 

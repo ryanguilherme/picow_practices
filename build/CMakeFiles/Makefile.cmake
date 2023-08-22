@@ -125,6 +125,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../hc_sr04/CMakeLists.txt"
   "../lcd_i2c/CMakeLists.txt"
   "../pico_sdk_import.cmake"
+  "../reflex_game/CMakeLists.txt"
+  "../timer_tutorial/CMakeLists.txt"
   "/usr/share/cmake-3.22/Modules/CMakeASMInformation.cmake"
   "/usr/share/cmake-3.22/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake-3.22/Modules/CMakeCXXInformation.cmake"
@@ -247,6 +249,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "hc_sr04/CMakeFiles/CMakeDirectoryInformation.cmake"
   "alarm/CMakeFiles/CMakeDirectoryInformation.cmake"
   "genius/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "timer_tutorial/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "reflex_game/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -263,4 +267,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "hc_sr04/CMakeFiles/hc_sr04.dir/DependInfo.cmake"
   "alarm/CMakeFiles/alarm.dir/DependInfo.cmake"
   "genius/CMakeFiles/genius.dir/DependInfo.cmake"
+  "timer_tutorial/CMakeFiles/timer_tutorial.dir/DependInfo.cmake"
+  "reflex_game/CMakeFiles/reflex_game.dir/DependInfo.cmake"
   )

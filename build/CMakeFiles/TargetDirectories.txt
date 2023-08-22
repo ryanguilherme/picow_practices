@@ -184,3 +184,9 @@
 /home/ryan/pico/picow_practices/build/genius/CMakeFiles/genius.dir
 /home/ryan/pico/picow_practices/build/genius/CMakeFiles/edit_cache.dir
 /home/ryan/pico/picow_practices/build/genius/CMakeFiles/rebuild_cache.dir
+/home/ryan/pico/picow_practices/build/timer_tutorial/CMakeFiles/timer_tutorial.dir
+/home/ryan/pico/picow_practices/build/timer_tutorial/CMakeFiles/edit_cache.dir
+/home/ryan/pico/picow_practices/build/timer_tutorial/CMakeFiles/rebuild_cache.dir
+/home/ryan/pico/picow_practices/build/reflex_game/CMakeFiles/reflex_game.dir
+/home/ryan/pico/picow_practices/build/reflex_game/CMakeFiles/edit_cache.dir
+/home/ryan/pico/picow_practices/build/reflex_game/CMakeFiles/rebuild_cache.dir
