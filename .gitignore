@@ -10,4 +10,8 @@ cmake-build-release
 */.idea
 **/.idea
 
+build
+*/build
+**/build
+
 
